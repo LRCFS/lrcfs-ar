@@ -5,17 +5,26 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin: 0px;  overflow: hidden;">
     <a-scene embedded arjs>
-    <a-marker
+    <!--<a-marker
         type="pattern"
         url="https://github.com/LRCFS/lrcfs-gitpage-ar/blob/41520cdf5faadea8a52f57da1bc804064ea73f7b/assets/pattern-qr-code.patt"
     >
         <a-entity 
         position="0 0 0"
         scale="1 1 1"
-        obj-model="obj: url(/assets/model.obj); mtl: url(/assets/model.mtl)"></a-entity>
+        obj-model="obj: url(/assets/model.obj); mtl: url(/assets/model.mtl)"></a-entity>-->
+       <a-marker preset="hiro">
+        <a-entity
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
     </a-marker>
     </a-marker>
     <a-entity camera></a-entity>
     </a-scene>
 </body>
 </html>
+
