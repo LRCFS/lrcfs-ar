@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html>
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-  <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs>
-      <!--<a-marker preset=’hiro’>-->    
+    <a-scene embedded arjs>  
        <a-marker type="pattern"
         url="https://lrcfs.github.io/lrcfs-gitpage-ar/assets/pattern-qr-code.patt"
-
-        <a-entity 
-        position="0 0 0"
-        scale="1 1 1"
-        obj-model="obj: url(https://lrcfs.github.io/lrcfs-gitpage-ar/assets/model.obj); mtl: url(https://lrcfs.github.io/lrcfs-gitpage-ar/assets/model.mtl)"></a-entity>
-     
-      <!-- <a-image src="https://raw.githubusercontent.com/lekaren-web/async_project/master/Marker%20Based%20AR/klipartz.com.png"
-          position= "0 1 0"
-          scale= "1 1 1"
-          rotation="0 2 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000"
-        /> -->    
+          <a-entity 
+            position="0 0 0"
+            scale="0.7 0.70.7"
+            obj-model="obj: url(https://lrcfs.github.io/lrcfs-gitpage-ar/assets/model.obj); mtl: url(https://lrcfs.github.io/lrcfs-gitpage-ar/assets/model.mtl)"></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
