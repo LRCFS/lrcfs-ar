@@ -4,14 +4,12 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs="debugUIEnabled: false; patternRatio=0.75">  
-      <a-assets>
-        <a-asset-item id="model-brigid" src="https://lrcfs.github.io/lrcfs-gitpage-ar/fee-24/assets/brigid50k.glb"></a-asset-item>
-      </a-assets>
-      <a-marker type="pattern" url="https://lrcfs.github.io/lrcfs-gitpage-ar/fee-24/assets/pattern-qr-code.patt">
-        <a-entity
-          position='0 10 0' scale='1 1 1' rotation='-90 0 0'
-          gltf-model="#model-brigid">
-        </a-entity>
+      <a-marker type="pattern"
+        url="https://lrcfs.github.io/lrcfs-gitpage-ar/salento-xr-22/assets/pattern-qr-code.patt"
+          <a-entity 
+            position="0 0 0"
+            scale="0.5 0.5 0.5"
+            obj-model="obj: url(https://lrcfs.github.io/lrcfs-gitpage-ar/salento-xr-22/assets/model.obj); mtl: url(https://lrcfs.github.io/lrcfs-gitpage-ar/salento-xr-22/assets/model.mtl)"></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
